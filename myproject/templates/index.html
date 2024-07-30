@@ -1,6 +1,8 @@
 <!-- <h1>My name is {{name}}, i am {{age}} years old</h1> -->
 <h1>input your text below</h1>
-<form method="get" action="counter">
+<form method="POST" action="counter">
+    {%csrf_token%}
     <textarea name="text" id="" cols="60" rows="10"></textarea><br>
     <input type="submit">
+
 </form>
